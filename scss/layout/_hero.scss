@@ -1,0 +1,82 @@
+.hero {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+    height: 230vh;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%),
+        url(../../assets/images/hero-\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        margin-top: 95px;
+        text-align: center;
+    }
+
+    &__media-br {
+        display: none;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 88px;
+        color: white;
+    }
+
+    &__desc {
+        margin-top: 27px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: white;
+    }
+
+    &__img {
+        margin-top: 35px;
+        margin-left: -18px;
+    }
+
+    &__gr {
+        position: absolute;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            #0e0e0e 66.15%
+        );
+        width: 100%;
+        height: 551px;
+        flex-shrink: 0;
+        bottom: 150%;
+    }
+}
+
+@include mobile() {
+    .hero {
+        position: relative;
+        margin: 0 auto;
+
+        height: 335vh;
+        width: 100%;
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%),
+            url(../../assets/images/hero-\ img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+        &__button {
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+            gap: 20px;
+            text-align: center;
+        }
+
+        &__btn-2 {
+            margin-left: -1px;
+        }
+    }
+}

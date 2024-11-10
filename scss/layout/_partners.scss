@@ -1,0 +1,38 @@
+.partners {
+    &__wrapper {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    &__logo-1 {
+        display: flex;
+        gap: 74px;
+    }
+
+    &__logo-2 {
+        display: flex;
+        gap: 74px;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 74px;
+    }
+}
+
+@include mobile () {
+    .partners {
+
+        &__logo-1 {
+            margin-left: 20px;
+        }
+
+        &__logo-2 {
+            margin-top: 130px;
+            margin-left: -450px;
+            gap: 50px;
+        }
+    }
+}
